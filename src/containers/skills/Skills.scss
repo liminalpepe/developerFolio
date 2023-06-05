@@ -12,7 +12,6 @@
 
 .skills-main-div > * {
   flex: 1;
-  margin-bottom: 30px;
 }
 
 .skills-image-div > img {
@@ -23,9 +22,18 @@
 .skills-heading {
   font-size: 56px;
   font-weight: 400;
+  margin: 40px 0px;
 }
 .subTitle {
   color: $subTitle;
+}
+
+.skills-text-subtitle {
+  margin-top: 40px 0px;
+}
+
+.software-skills-main-div {
+  margin-top: 40px;
 }
 
 /* Media Query */
@@ -37,7 +45,6 @@
 @media (max-width: 768px) {
   .skills-heading {
     font-size: 30px;
-    text-align: center;
   }
   .greeting-text-p {
     font-size: 16px;
@@ -48,14 +55,12 @@
   }
   .skills-text-div {
     margin-left: 0px;
-    margin: 20px;
   }
   .skills-text {
     font-size: 16px;
   }
   .skills-text-subtitle {
     font-size: 16px;
-    text-align: center;
   }
   .skills-image-div {
     /* display: none; */
