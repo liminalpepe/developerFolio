@@ -53,30 +53,28 @@ const skillsSection = {
     emoji("⚡ Create Defi applications for web3"),
     emoji("⚡ Develop NFT collection websites and marketplace"),
     emoji("⚡ Design and implement JSON-RPC APIs"),
-    emoji(
-      "Write project specifications and align requirements with stakeholders"
-    ),
+
     emoji("⚡ Develop highly interactive UI/UX Web Applications"),
-    emoji("⚡ Create and manage databases in Mysql, DynamoDB, and PostgreSQL"),
+    emoji("⚡ Working with Mysql, DynamoDB, and PostgreSQL"),
     emoji("⚡ Create serverless applications on AWS Lambda"),
     emoji("⚡ Write tests and high-quality code"),
-    emoji(
-      "DevOps working on Deploy automation, lib upgrades and Server maintenance"
-    )
+    emoji("⚡ Write specs and plan execution")
   ],
   skillsRight: [
     emoji("⚡ Integrate gateway payment system into SaaS"),
-    emoji("⚡ Create landing pages and A/B testing for Marketing Campaigns"),
     emoji("⚡ Design and implement Meta heuristics algorithms"),
     emoji("⚡ Database query and index optimization"),
     emoji("⚡ Perform complex database migration without downtime"),
     emoji("⚡ Integrate CRM and Marketing tools"),
-    emoji("⚡ Design and implement cloud architectures that scale")
+    emoji("⚡ Design and implement cloud architectures that scale"),
+    emoji(
+      "⚡ DevOps working on Deploy automation, lib upgrades and Server maintenance"
+    )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
-  softwareSkillsLeft: [
+  softwareSkills: [
     {
       skillName: "css3",
       fontAwesomeClassname: "fab fa-css3"
@@ -232,14 +230,22 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      role: "Full Stack Engineering Consultant",
+      subrole: "AI Engineer",
+      company: "WeSolutions",
+      companylogo: require("./assets/images/wbezerra_logo.png"),
+      date: "2023 - Present",
+      desc: "With a decade of industry experience, I now run a consulting company, providing contracting services to digital brands. I specialize in coding and developing innovative solutions tailored to meet their unique needs"
+    },
+    {
       role: "Full Stack Software Engineer AI Engineer",
       subrole: "AI Engineer",
       company: "Molde.me",
       companylogo: require("./assets/images/moldeme_logo.png"),
-      date: "2020 – Present",
+      date: "2018 – Present",
       companyInfo:
         "Molde.me is a CAD and Nesting system on the cloud for textile companies.",
-      desc: "Molde.me is a CAD and Nesting system on the cloud for textile companies."
+      desc: "Early co-founder (<1st year) sharing C-Level responsibilities in all departments acting mostly as Tech Lead, Full Stack Software Engineer, Artificial Intelligence Researcher, and DevOps architect"
     },
     {
       role: "Tech Lead",
