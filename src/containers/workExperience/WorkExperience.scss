@@ -7,14 +7,12 @@
 .experience-heading {
   font-size: 56px;
   font-weight: 400;
+  margin: 2em 0;
 }
 
 .experience-container {
   display: flex;
-  width: 90%;
-  padding: 20px 10px;
   margin: 0px auto;
-  margin-top: 2rem;
 }
 
 .experience-container > * {
@@ -32,6 +30,5 @@
 @media (max-width: 768px) {
   .experience-heading {
     font-size: 30px;
-    text-align: center;
   }
 }
