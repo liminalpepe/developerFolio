@@ -31,7 +31,7 @@
   -o-filter: blur(0px);
   -ms-filter: blur(0px);
   filter: blur(0px);
-  height: 11rem;
+  height: 8rem;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -45,7 +45,7 @@
   -o-filter: blur(5px);
   -ms-filter: blur(5px);
   filter: blur(5px);
-  height: 11rem;
+  height: 8rem;
   top: 0;
   left: 0;
   width: 100%;
@@ -55,8 +55,7 @@
 .experience-div-company {
   position: absolute;
   background: transparent;
-  height: 9rem;
-  top: 0;
+  top: 6rem;
   left: 0;
   width: 100%;
   display: flex;
@@ -82,7 +81,7 @@
   object-fit: cover;
   left: 0;
   right: 0;
-  top: 7rem;
+  top: 0.7rem;
   margin-left: auto;
   margin-right: auto;
   width: 8rem;
@@ -92,7 +91,6 @@
 }
 
 .experience-text-role {
-  text-align: center;
   color: $textColor;
   font-weight: 700;
   font-size: 25px;
@@ -104,7 +102,6 @@
   color: $textColorDark !important;
 }
 .experience-text-date {
-  text-align: center;
   color: $textColor;
   font-size: 20px;
   margin: 0px;
@@ -112,16 +109,22 @@
   font-weight: 600;
 }
 
-.experience-text-desc {
-  text-align: center;
-}
-
 .experience-text-details {
   padding: 1.5rem;
-  margin-top: 2rem;
 }
 
 /* Media Query */
+
+@media screen and (min-width: 1405px) {
+  .experience-roundedimg {
+    top: 0.5rem;
+  }
+
+  .experience-blurred_div,
+  .experience-banner {
+    height: 9rem;
+  }
+}
 
 @media (max-width: 1380px) {
   .experience-text-role {
