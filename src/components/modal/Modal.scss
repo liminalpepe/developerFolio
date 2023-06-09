@@ -1,0 +1,39 @@
+@import "../../_globalColor";
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.modal-container {
+  margin-right: 40px;
+}
+
+.modal-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 100px;
+  min-width: 50%;
+  min-height: 50%;
+  border-radius: 10px;
+  color: black;
+}
+
+.modal-close {
+  position: absolute;
+  right: 100px;
+  top: 50px;
+  font-size: 30px;
+}
+
+.modal-close:hover {
+  font-size: 35px;
+  cursor: pointer;
+}
