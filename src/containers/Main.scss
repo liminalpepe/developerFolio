@@ -5,3 +5,25 @@
   color: white;
   transition: "0.1s";
 }
+
+.content {
+  padding: 0 10%;
+}
+
+@media (min-width: 1380px) {
+  .content {
+    padding: 0 15%;
+  }
+}
+
+@media (max-width: 1380px) {
+  .content {
+    padding: 0 10%;
+  }
+}
+
+@media (max-width: 1180px) {
+  .content {
+    padding: 0 5%;
+  }
+}
