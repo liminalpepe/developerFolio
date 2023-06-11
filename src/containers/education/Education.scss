@@ -1,20 +1,17 @@
 .education-heading {
-  font-size: 56px;
+  font-size: 52px;
   font-weight: 400;
+  margin: 80px 0;
 }
 
 .education-section {
   display: flex;
   flex-direction: column;
   width: 90%;
-  padding: 20px 0px;
-  margin: 0px auto;
-  margin-top: 2rem;
 }
 
 .education-section > * {
   flex: 1;
-  margin-bottom: 30px;
 }
 
 .education-card-container {
@@ -42,7 +39,6 @@
   }
   .education-heading {
     font-size: 30px;
-    text-align: center;
   }
   .education-text-subtitle {
     font-size: 16px;

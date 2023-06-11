@@ -1,11 +1,13 @@
 import React from "react";
 import "./Top.scss";
 
+export function TopEvent() {
+  console.log("topou");
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
 export default function Top() {
-  function TopEvent() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  }
   // When the user scrolls down 20px from the top of the document, show the button
   function scrollFunction() {
     if (

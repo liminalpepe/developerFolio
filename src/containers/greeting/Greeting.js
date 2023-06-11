@@ -24,9 +24,7 @@ export default function Greeting() {
               <h1
                 className={isDark ? "dark-mode greeting-text" : "greeting-text"}
               >
-                {" "}
-                {greeting.title}{" "}
-                <span className="wave-emoji">{emoji("👋")}</span>
+                {greeting.title}
               </h1>
               <p
                 className={
@@ -37,9 +35,18 @@ export default function Greeting() {
               >
                 {greeting.subTitle}
               </p>
-              <SocialMedia />
+              <span
+                className={
+                  isDark
+                    ? "dark-mode greeting-text-span"
+                    : "greeting-text-p subTitle"
+                }
+              >
+                {greeting.subTitleRoles}
+              </span>
+
               <div className="button-greeting-div">
-                <Button text="Contact me" href="#contact" />
+                <Button text="Work with me" href="#contact" />
                 {greeting.resumeLink && (
                   <Button
                     text="See my resume"
@@ -48,17 +55,25 @@ export default function Greeting() {
                   />
                 )}
               </div>
+
+              <SocialMedia />
+
+              <p
+                className={
+                  isDark
+                    ? "dark-mode greeting-text-sub"
+                    : "greeting-text-sub subTitle"
+                }
+              >
+                {greeting.subText}
+              </p>
             </div>
           </div>
           <div className="greeting-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={landingPerson} />
-            ) : (
-              <img
-                alt="man sitting on table"
-                src={require("../../assets/images/manOnTable.svg")}
-              ></img>
-            )}
+            <img
+              alt="dev coding"
+              src={require("../../assets/images/dev_coding.png")}
+            ></img>
           </div>
         </div>
       </div>

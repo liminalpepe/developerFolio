@@ -6,10 +6,6 @@
   overflow: hidden;
 }
 
-.skills-text-div {
-  margin-left: 50px;
-}
-
 .skills-main-div > * {
   flex: 1;
 }
@@ -19,17 +15,21 @@
   height: auto;
 }
 
+.skills-text {
+  font-size: 16px;
+}
+
 .skills-heading {
   font-size: 56px;
   font-weight: 400;
-  margin: 40px 0px;
+  margin: 60 0;
 }
 .subTitle {
   color: $subTitle;
 }
 
 .skills-text-subtitle {
-  margin-top: 40px 0px;
+  margin-bottom: 3em;
 }
 
 .software-skills-main-div {
@@ -55,9 +55,6 @@
   }
   .skills-text-div {
     margin-left: 0px;
-  }
-  .skills-text {
-    font-size: 16px;
   }
   .skills-text-subtitle {
     font-size: 16px;

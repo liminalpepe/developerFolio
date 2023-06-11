@@ -1,61 +1,56 @@
 @import "../../_globalColor";
 
-.greet-main {
+.work-with-me-main {
   margin-top: 2rem;
 }
 
-.greeting-main {
+.work-with-me-main {
   display: flex;
 }
 
-.subTitle {
-  color: $subTitle !important;
-}
-
-.greeting-main {
+.work-with-me-main {
   display: flex;
 }
 
-.greeting-main > * {
+.work-with-me-main > * {
   margin-bottom: 30px;
 }
-.button-greeting-div {
+.button-work-with-me-div {
   display: flex;
-  margin: 20px 0 100px;
+  margin: 20px 0;
 }
 
-.greeting-text {
-  font-size: 56px;
+.work-with-me-text {
+  font-size: 50px;
   line-height: 1.1;
   color: $textColor !important;
 }
 
-.greeting-text-p {
-  font-size: 19px;
+.work-with-me-text-p {
+  font-size: 20px;
   margin-bottom: 0;
 }
 
-.greeting-text-span {
-  font-size: 14px;
-  line-height: normal;
-}
-
-.greeting-text-div {
+.work-with-me-text-div {
   flex: 2;
 }
 
-.greeting-text-sub {
-  font-size: 14px;
+.work-with-me-text-sub {
+  font-size: 12px;
   max-width: 530px;
 }
 
-.greeting-image-div {
+.work-with-me-image-div {
   flex: 1;
 
   img {
     height: 600px;
     margin-left: 10px;
   }
+}
+
+.skills-main-div {
+  margin: 50px 0;
 }
 
 .social-media-div {
@@ -88,7 +83,7 @@
 
 /* Media Query */
 @media (max-width: 1404px) {
-  .greeting-image-div {
+  .work-with-me-image-div {
     img {
       height: 500px;
       margin-left: 10px;
@@ -96,41 +91,33 @@
   }
 }
 @media (max-width: 1380px) {
-  .greeting-image-div {
+  .work-with-me-image-div {
     img {
       height: 600px;
       margin-left: 10px;
     }
   }
 
-  .greeting-text {
-    font-size: 56px;
+  .work-with-me-text {
+    font-size: 50px;
   }
-  .greeting-text-p {
-    font-size: 19px;
-  }
-
-  .greeting-text-span {
-    font-size: 14px;
+  .work-with-me-text-p {
+    font-size: 18px;
   }
 }
 @media (max-width: 768px) {
-  .greeting-text {
+  .work-with-me-text {
     font-size: 30px;
   }
-  .greeting-text-p {
+  .work-with-me-text-p {
     font-size: 16px;
     line-height: normal;
   }
-  .greeting-text-span {
-    font-size: 12px;
-    line-height: normal;
-    text-align: center;
-  }
-  .greeting-main {
+
+  .work-with-me-main {
     display: block;
   }
-  .greeting-image-div {
+  .work-with-me-image-div {
     height: 256px;
   }
 }
@@ -142,7 +129,7 @@
 }
 
 @media (max-width: 1024px) {
-  .greeting-image-div {
+  .work-with-me-image-div {
     display: none;
   }
 }
