@@ -1,5 +1,5 @@
 import React, {useContext, Suspense} from "react";
-import "./Project.scss";
+import "./Projects.scss";
 import LightboxCard from "../../components/lightboxCard/LightboxCard";
 import ProjectModal from "./projectModal/ProjectModal";
 import Modal from "../../components/modal/Modal";
