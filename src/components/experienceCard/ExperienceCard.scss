@@ -31,7 +31,7 @@
   -o-filter: blur(0px);
   -ms-filter: blur(0px);
   filter: blur(0px);
-  height: 8rem;
+  height: 5rem;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -45,7 +45,7 @@
   -o-filter: blur(5px);
   -ms-filter: blur(5px);
   filter: blur(5px);
-  height: 8rem;
+  height: 5rem;
   top: 0;
   left: 0;
   width: 100%;
@@ -93,7 +93,7 @@
 .experience-text-role {
   color: $textColor;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 16px;
   margin: 0px;
   padding-top: 1.5rem;
   line-height: normal;
@@ -103,14 +103,18 @@
 }
 .experience-text-date {
   color: $textColor;
-  font-size: 20px;
+  font-size: 16px;
   margin: 0px;
   padding-top: 1rem;
   font-weight: 600;
 }
 
 .experience-text-details {
-  padding: 1.5rem;
+  padding: 3rem 1.5rem 0;
+}
+
+.experience-text-desc {
+  font-size: 14px;
 }
 
 /* Media Query */
@@ -122,38 +126,16 @@
 
   .experience-blurred_div,
   .experience-banner {
-    height: 9rem;
+    height: 5rem;
   }
 }
 
 @media (max-width: 1380px) {
   .experience-text-role {
     padding-top: 0.5rem;
-    font-size: 22px;
-  }
-  .experience-text-company {
-    font-size: 22px;
-  }
-  .experience-text-date {
-    font-size: 18px;
   }
   .experience-roundedimg {
     width: 6.5rem;
     height: 6.5rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .experience-text-role {
-    font-size: 22px;
-  }
-  .experience-text-company {
-    font-size: 22px;
-  }
-  .experience-text-date {
-    font-size: 18px;
-  }
-  .experience-text-desc {
-    font-size: 16px;
   }
 }
