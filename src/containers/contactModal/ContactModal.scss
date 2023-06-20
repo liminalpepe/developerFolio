@@ -20,6 +20,15 @@
     }
   }
 
+  .contact-success {
+    text-align: center;
+
+    .fa-check-square {
+      color: #00b3ff;
+      font-size: 143px;
+    }
+  }
+
   @media (max-width: 768px) {
     h1 {
       font-size: 30px;

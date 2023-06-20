@@ -4,11 +4,17 @@ import "./WorkWithMe.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 
-import {illustration, workWithMe} from "../../portfolio";
+import {workWithMe} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
-export default function WorkWithMe() {
+export default function WorkWithMe({openContactModal}) {
   const {isDark} = useContext(StyleContext);
+
+  function workWithMeClick(e) {
+    e.preventDefault();
+    openContactModal();
+  }
+
   return (
     <Fade bottom duration={1000} distance="40px">
       <div className="work-with-me-main" id="contact">
@@ -67,7 +73,11 @@ export default function WorkWithMe() {
               <SocialMedia />
 
               <div className="button-work-with-me-div">
-                <Button text="Contact me" href="#contact" />
+                <Button
+                  text="Contact me"
+                  href="#contact"
+                  onClickCallBack={workWithMeClick}
+                />
                 {workWithMe.resumeLink && (
                   <Button
                     text="See my resume"

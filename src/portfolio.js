@@ -1260,8 +1260,8 @@ const contactInfo = {
     "Hello! I'm thrilled to hear from you. If you're interested in working together or have any inquiries, please feel free to reach out to me using the form below.",
     "Looking forward to hearing from you and exploring potential collaborations!"
   ],
-  considerations:
-    "Note: All information shared with me will be treated with utmost confidentiality"
+  thankYouTitle: "Thank you for reaching out!",
+  thankYoutDescription: "I'll get back to you soon."
 };
 
 // Twitter Section

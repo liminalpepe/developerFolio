@@ -75,7 +75,7 @@ const Main = () => {
             {/* <Achievement /> */}
             <AcademicProjects />
             {/* <Blogs /> */}
-            <WorkWithMe />
+            <WorkWithMe openContactModal={openModal} />
             <Footer />
             <ScrollToTopButton />
           </div>
