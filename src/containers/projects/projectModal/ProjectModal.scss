@@ -2,40 +2,58 @@
 
 .modal-container {
   .modal-title {
+    font-size: 40px;
+    line-height: 50px;
     margin-bottom: 50px;
-  }
-
-  .modal-sub-title {
   }
 
   .modal-images {
     margin: 50px 0;
+    text-align: center;
+
+    img {
+      max-width: 80%;
+    }
   }
 
   .modal-links {
     margin: 50px 0;
+    display: grid;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 
-    a {
-      color: $buttonColor !important;
-      vertical-align: middle;
-      align-items: center;
-      text-decoration: none;
-      border-radius: 4px;
-      display: inline-flex;
-      font-size: 0.75rem;
-      height: 2em;
-      justify-content: center;
-      white-space: nowrap;
-      line-height: 1.5;
-      margin: 0 0.5rem 0.5rem 0;
-      cursor: pointer;
-      transition: 0.2s ease-in;
+  a {
+    color: $buttonColor !important;
+    vertical-align: middle;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-flex;
+    font-size: 16px;
+    height: 2em;
+    white-space: nowrap;
+    line-height: 1.5;
+    margin: 0 0.5rem 0.5rem 0;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+  }
+  .software-skill-inline i {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal-container {
+    .modal-title {
+      font-size: 22px;
+      line-height: 44px;
+      margin: 50px 0 30px;
     }
 
-    a:hover {
-      background-color: $buttonColor;
-      color: $lightBackground3 !important;
-      padding: 0 0.75em;
+    .modal-images {
+      img {
+        max-width: 100%;
+      }
     }
   }
 }

@@ -6,7 +6,7 @@ import Modal from "../../components/modal/Modal";
 import {projects} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 import Loading from "../../containers/loading/Loading";
-import {useState} from "react";
+import {useState, useEffect} from "react";
 
 export default function Projects() {
   const [toggleModal, setToggleModal] = useState(false);
@@ -14,6 +14,11 @@ export default function Projects() {
   const renderLoader = () => <Loading />;
   // todo: remove useContex because is not supported
   const {isDark} = useContext(StyleContext);
+
+  useEffect(() => {
+    toggleModal && (document.body.style.overflow = "hidden");
+    !toggleModal && (document.body.style.overflow = "unset");
+  }, [toggleModal]);
 
   function openModal(cardInfo) {
     setCardInfo(cardInfo);

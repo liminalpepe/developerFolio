@@ -1,7 +1,8 @@
 import "./ProjectModal.scss";
 import {useState} from "react";
-import React, {useContext, Suspense} from "react";
+import React, {useContext} from "react";
 import StyleContext from "../../../contexts/StyleContext";
+import InlineSoftwareSkill from "../../../components/inlineSoftwareSkill/InlineSoftwareSkill";
 
 export default function ProjectModal(props) {
   const {isDark} = useContext(StyleContext);
@@ -10,14 +11,14 @@ export default function ProjectModal(props) {
   return (
     <div className={isDark ? "modal-container dark-mode" : "modal-container"}>
       <p className="modal-title">{cardInfo?.title}</p>
-      {cardInfo?.images?.length > 0 ? (
-        <div className="modal-images">
-          {cardInfo?.images?.map((img, i) => {
-            return <img src={img.src} alt={img.alt} key={i}></img>;
-          })}
-        </div>
-      ) : null}
-      <p className="modal-sub-title">{cardInfo?.description}</p>
+      <InlineSoftwareSkill softwareSkills={cardInfo.softwareSkills} />
+
+      <div className="modal-sub-title">
+        {cardInfo?.description?.map((text, i) => {
+          return <p key={i}>{text}</p>;
+        })}
+      </div>
+
       <div className="modal-links">
         {cardInfo?.links?.map((link, i) => {
           return (
@@ -27,6 +28,25 @@ export default function ProjectModal(props) {
           );
         })}
       </div>
+
+      {cardInfo?.images?.length > 0 ? (
+        <>
+          {cardInfo?.images?.map((img, i) => {
+            return (
+              <div key={i} className="modal-images">
+                <img src={img.src} alt={img.alt}></img>
+                {img.source_url ? (
+                  <a href={img.source_url} target="_blank" rel="noreferrer">
+                    {img.subtitle}
+                  </a>
+                ) : (
+                  <p>{img.subtitle}</p>
+                )}
+              </div>
+            );
+          })}
+        </>
+      ) : null}
     </div>
   );
 }
