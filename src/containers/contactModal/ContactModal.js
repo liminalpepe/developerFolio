@@ -5,7 +5,7 @@ import emailjs from "@emailjs/browser";
 import {contactInfo} from "../../portfolio";
 import Button from "../../components/button/Button";
 
-export default function ContactModal() {
+export default function ContactModal({setToggleModal}) {
   const form = useRef();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -38,15 +38,15 @@ export default function ContactModal() {
     <div className="modal-container">
       {showThankYou ? (
         <>
-          <div className="contact-success">
+          <div className="contact-success" onClick={setToggleModal}>
+            <i class="fa fa-check-square"></i>
+
             <p className={isDark ? "dark-mode subTitle" : "subTitle"}>
               {contactInfo.thankYouTitle}
             </p>
             <p className={isDark ? "dark-mode subTitle" : "subTitle"}>
               {contactInfo.thankYoutDescription}
             </p>
-
-            <i class="fa fa-check-square"></i>
           </div>
         </>
       ) : (

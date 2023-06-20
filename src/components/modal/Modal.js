@@ -28,7 +28,9 @@ export default function Modal({isOpen, setToggleModal, children, center}) {
             <div className="modal-close" onClick={setToggleModal}>
               x
             </div>
-            <div>{children}</div>
+            <div>
+              {React.cloneElement(children, {setToggleModal: setToggleModal})}
+            </div>
           </div>
         </div>
       </div>
