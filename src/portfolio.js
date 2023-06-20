@@ -255,7 +255,7 @@ const workExperiences = {
     {
       role: "Full Stack Engineering Consultant",
       company: "WeSolutions",
-      companylogo: require("./assets/images/wes_codes.png"),
+      companylogo: require("./assets/images/wes_codes.webp"),
       date: "2023 - Present",
       desc: "With a decade of industry experience, I now run a consulting company, providing contracting services to digital brands. I specialize in coding and developing innovative solutions tailored to meet their unique needs"
     },
@@ -263,7 +263,7 @@ const workExperiences = {
       role: "AI Engineer",
       subrole: "Full Stack Software Engineer",
       company: "Molde.me",
-      companylogo: require("./assets/images/moldeme_logo.png"),
+      companylogo: require("./assets/images/moldeme_logo.webp"),
       date: "2018 – Present",
       companyInfo:
         "Molde.me is a CAD and Nesting system on the cloud for textile companies.",
@@ -273,7 +273,7 @@ const workExperiences = {
       role: "Tech Lead",
       subrole: "Full Stack Software Engineer",
       company: "Jobscore",
-      companylogo: require("./assets/images/jobscore_logo.png"),
+      companylogo: require("./assets/images/jobscore_logo.webp"),
       date: "2016 – 2020",
       companyInfo:
         "JobScore is an applicant tracking system helping recruiters with a fully automated hiring pipeline and efficient candidate review process",
@@ -283,7 +283,7 @@ const workExperiences = {
       role: "Software Engineer",
       subrole: "Support Hat",
       company: "WBezerra",
-      companylogo: require("./assets/images/wbezerra_logo.png"),
+      companylogo: require("./assets/images/wbezerra_logo.webp"),
       date: "2012 –  2015",
       companyInfo:
         "The company offers web solutions specialized in industrial automation",
@@ -299,7 +299,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "University of the State of Santa Catarina",
-      logo: require("./assets/images/udesc_logo.jpeg"),
+      logo: require("./assets/images/udesc_logo.webp"),
       subHeader: "Bachelor in Computer Science",
       duration: "June 2010 - July 2015",
       desc: "Participated in the research of new metaheuristics and published 5 papers",
@@ -326,7 +326,7 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/udesc_logo.jpeg"),
+      image: require("./assets/images/udesc_logo.webp"),
       projectName: "Saayahealth",
       projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       footerLink: [
@@ -338,7 +338,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/udesc_logo.jpeg"),
+      image: require("./assets/images/udesc_logo.webp"),
       projectName: "Nextu",
       projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       footerLink: [
@@ -473,7 +473,7 @@ const projects = {
       images: [
         {
           alt: "Jobscore screenshot showing the candidate page and offer creating menu",
-          src: require("./assets/images/projects/offer_menu.jpeg"),
+          src: require("./assets/images/projects/offer_menu.webp"),
           subtitle:
             "Jobscore screenshot showing the candidate page and offer creating menu",
           source_url:
@@ -481,14 +481,14 @@ const projects = {
         },
         {
           alt: "Jobscore screenshot showing the offer creating dialog",
-          src: require("./assets/images/projects/make_offer.jpeg"),
+          src: require("./assets/images/projects/make_offer.webp"),
           subtitle: "Jobscore screenshot showing the offer creating dialog",
           source_url:
             "https://support.jobscore.com/hc/en-us/articles/360012530552-How-do-offers-work-in-JobScore-"
         },
         {
           alt: "Jobscore screenshot showing a view of the offer details lightbox",
-          src: require("./assets/images/projects/view_offers.jpeg"),
+          src: require("./assets/images/projects/view_offers.webp"),
           subtitle:
             "Jobscore screenshot showing a view of the offer details lightbox",
           source_url:
@@ -496,7 +496,7 @@ const projects = {
         },
         {
           alt: "Jobscore screenshot showing the offer signature field",
-          src: require("./assets/images/projects/offer_signature.jpeg"),
+          src: require("./assets/images/projects/offer_signature.webp"),
           subtitle: "Jobscore screenshot showing the offer signature field",
           source_url:
             "https://support.jobscore.com/hc/en-us/articles/360013038451"
@@ -617,13 +617,13 @@ const projects = {
       images: [
         {
           alt: "BEFORE: Mean and Worst of 15 parallel execution in ms for 35 runs",
-          src: require("./assets/images/projects/old_cold_start_time.png"),
+          src: require("./assets/images/projects/old_cold_start_time.webp"),
           subtitle:
             "BEFORE: Mean and Worst of 15 parallel execution in ms for 35 runs"
         },
         {
           alt: "AFTER: Mean and Worst of 15 parallel execution in ms for 35 runs",
-          src: require("./assets/images/projects/improved_cold_start.png"),
+          src: require("./assets/images/projects/improved_cold_start.webp"),
           subtitle:
             "AFTER: Mean and Worst of 15 parallel execution in ms for 21 runs"
         }
@@ -772,7 +772,7 @@ const projects = {
       images: [
         {
           alt: "Status Page",
-          src: require("./assets/images/projects/status_page.png"),
+          src: require("./assets/images/projects/status_page.webp"),
           subtitle: "Molde.me status page",
           source_url: "https://status.molde.me"
         }
@@ -997,14 +997,14 @@ const projects = {
       images: [
         {
           alt: "Jobscore screenshot sending offer for signature",
-          src: require("./assets/images/projects/send_offer_docusign.jpeg"),
+          src: require("./assets/images/projects/send_offer_docusign.webp"),
           subtitle: "Jobscore screenshot sending offer for signature",
           source_url:
             "https://support.jobscore.com/hc/en-us/articles/360013038451"
         },
         {
           alt: "Jobscore screenshot showing the offer signature field",
-          src: require("./assets/images/projects/offer_signature.jpeg"),
+          src: require("./assets/images/projects/offer_signature.webp"),
           subtitle: "Jobscore screenshot showing the offer signature field",
           source_url:
             "https://support.jobscore.com/hc/en-us/articles/360013038451"
@@ -1063,7 +1063,7 @@ const projects = {
       images: [
         {
           alt: "Jobscore user access levels and its features available",
-          src: require("./assets/images/projects/access_level_table.jpeg"),
+          src: require("./assets/images/projects/access_level_table.webp"),
           subtitle: "Jobscore user access levels and its features available",
           source_url:
             "https://support.jobscore.com/hc/en-us/articles/212930463-What-are-the-different-user-access-levels-in-JobScore-"
@@ -1103,7 +1103,7 @@ const academicProjects = {
           alt: "Screenshot from publication showing neighbourhood structures and RVNS",
           subtitle:
             "Screenshot from publication showing neighbourhood structures and RVNS",
-          src: require("./assets/images/projects/screenshot_of_the_prvns_article.png")
+          src: require("./assets/images/projects/screenshot_of_the_prvns_article.webp")
         }
       ]
     },
@@ -1125,7 +1125,7 @@ const academicProjects = {
           alt: "Screenshot from publication showing algorithms convergence for Rosenbrock problem in a high dimensional problem",
           subtitle:
             "Screenshot from publication showing algorithms convergence for Rosenbrock problem in a high dimensional problem",
-          src: require("./assets/images/projects/rosenbrock_200dim.png")
+          src: require("./assets/images/projects/rosenbrock_200dim.webp")
         }
       ]
     },
@@ -1165,7 +1165,7 @@ const academicProjects = {
       images: [
         {
           alt: "Bike Trilhas App",
-          src: require("./assets/images/projects/bike_trilhas_app.png")
+          src: require("./assets/images/projects/bike_trilhas_app.webp")
         }
       ]
     }
@@ -1182,7 +1182,7 @@ const achievementSection = {
       title: "Google Code-In Finalist",
       subtitle:
         "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/udesc_logo.jpeg"),
+      image: require("./assets/images/udesc_logo.webp"),
       imageAlt: "Google Code-In Logo",
       footerLink: [
         {
@@ -1203,7 +1203,7 @@ const achievementSection = {
       title: "Google Assistant Action",
       subtitle:
         "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/udesc_logo.jpeg"),
+      image: require("./assets/images/udesc_logo.webp"),
       imageAlt: "Google Assistant Action Logo",
       footerLink: [
         {
@@ -1216,7 +1216,7 @@ const achievementSection = {
     {
       title: "PWA Web App Developer",
       subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/udesc_logo.jpeg"),
+      image: require("./assets/images/udesc_logo.webp"),
       imageAlt: "PWA Logo",
       footerLink: [
         {name: "Certification", url: ""},

@@ -81,7 +81,7 @@ export default function Greeting({openContactModal}) {
           <div className="greeting-image-div">
             <img
               alt="dev coding"
-              src={require("../../assets/images/dev_coding.png")}
+              src={require("../../assets/images/dev_coding.webp")}
             ></img>
           </div>
         </div>
