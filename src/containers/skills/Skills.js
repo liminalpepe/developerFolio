@@ -4,6 +4,7 @@ import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
 import {Fade} from "react-reveal";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
+import {skillsSection} from "../../portfolio";
 
 export default function Skills(props) {
   const {isDark} = useContext(StyleContext);
@@ -69,7 +70,7 @@ export default function Skills(props) {
 
       <Fade right duration={1000}>
         <div className="skills-image-div">
-          <SoftwareSkill />
+          <SoftwareSkill softwareSkills={skillsSection.softwareSkills} />
         </div>
       </Fade>
     </div>
