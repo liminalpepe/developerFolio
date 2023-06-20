@@ -1,0 +1,29 @@
+.project-title {
+  font-size: 52px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 80px 0;
+}
+
+.startup-project-text img {
+  max-width: 100%;
+  height: auto;
+}
+
+.repo-cards-div-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(182px, 1fr));
+  gap: 1rem 1rem;
+}
+
+/* Media Query */
+@media (max-width: 1380px) {
+  .project-title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .project-title {
+    font-size: 30px;
+  }
+}

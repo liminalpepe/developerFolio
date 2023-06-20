@@ -1,0 +1,148 @@
+@import "../../_globalColor";
+
+.greet-main {
+  margin-top: 2rem;
+}
+
+.greeting-main {
+  display: flex;
+}
+
+.subTitle {
+  color: $subTitle !important;
+}
+
+.greeting-main {
+  display: flex;
+}
+
+.greeting-main > * {
+  margin-bottom: 30px;
+}
+.button-greeting-div {
+  display: flex;
+  margin: 20px 0 100px;
+}
+
+.greeting-text {
+  font-size: 56px;
+  line-height: 1.1;
+  color: $textColor !important;
+}
+
+.greeting-text-p {
+  font-size: 19px;
+  margin-bottom: 0;
+}
+
+.greeting-text-span {
+  font-size: 14px;
+  line-height: normal;
+}
+
+.greeting-text-div {
+  flex: 2;
+}
+
+.greeting-text-sub {
+  font-size: 14px;
+  max-width: 530px;
+}
+
+.greeting-image-div {
+  flex: 1;
+
+  img {
+    height: 600px;
+    margin-left: 10px;
+  }
+}
+
+.social-media-div {
+  margin: 20px 0;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-10deg);
+  }
+  20% {
+    transform: rotate(12deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Media Query */
+@media (max-width: 1404px) {
+  .greeting-image-div {
+    img {
+      height: 500px;
+      margin-left: 10px;
+    }
+  }
+}
+@media (max-width: 1380px) {
+  .greeting-image-div {
+    img {
+      height: 600px;
+      margin-left: 10px;
+    }
+  }
+
+  .greeting-text {
+    font-size: 56px;
+  }
+  .greeting-text-p {
+    font-size: 19px;
+  }
+
+  .greeting-text-span {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .greeting-text {
+    font-size: 30px;
+  }
+  .greeting-text-p {
+    font-size: 16px;
+    line-height: normal;
+  }
+  .greeting-text-span {
+    font-size: 12px;
+    line-height: normal;
+    text-align: center;
+  }
+  .greeting-main {
+    display: block;
+  }
+  .greeting-image-div {
+    height: 256px;
+  }
+}
+
+@media (max-width: 320px) {
+  .main {
+    width: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .greeting-image-div {
+    display: none;
+  }
+}

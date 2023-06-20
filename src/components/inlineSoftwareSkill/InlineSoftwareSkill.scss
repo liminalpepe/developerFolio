@@ -1,0 +1,14 @@
+@import "../../_globalColor";
+
+.software-skill-inline {
+  margin: 0;
+
+  i {
+    font-size: 1rem;
+    margin-right: 10px;
+  }
+
+  i:hover {
+    color: $skillsColor;
+  }
+}
