@@ -56,6 +56,15 @@ export default function ExperienceCard({cardInfo, isDark}) {
         <h5
           className={
             isDark
+              ? "experience-text-role dark-mode-text"
+              : "experience-text-role"
+          }
+        >
+          {cardInfo.subrole}
+        </h5>
+        <h5
+          className={
+            isDark
               ? "experience-text-date dark-mode-text"
               : "experience-text-date"
           }

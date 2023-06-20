@@ -26,9 +26,9 @@ function Header() {
     <Headroom>
       <header className={isDark ? "dark-menu header" : "header"}>
         <a href="/" className="logo">
-          <span className="grey-color"> &lt;</span>
+          <span> &lt;</span>
           <span className="logo-name">{greeting.username}</span>
-          <span className="grey-color">/&gt;</span>
+          <span>/&gt;</span>
         </a>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label
@@ -46,26 +46,18 @@ function Header() {
               About
             </a>
           </li>
-          {viewSkills && (
-            <li>
-              <a href="#skills">What I do</a>
-            </li>
-          )}
-          {viewExperience && (
-            <li>
-              <a href="#experience">Experience</a>
-            </li>
-          )}
-          {viewOpenSource && (
-            <li>
-              <a href="#opensource">Education</a>
-            </li>
-          )}
-          {viewAchievement && (
-            <li>
-              <a href="#achievements">Projects</a>
-            </li>
-          )}
+          <li>
+            <a href="#skills">What I do</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#experience">Experience</a>
+          </li>
+          <li>
+            <a href="#education">Education</a>
+          </li>
           {/* {viewBlog && (
             <li>
               <a href="#blogs">Blogs</a>
@@ -73,12 +65,6 @@ function Header() {
           )} */}
           <li>
             <a href="#contact">Contact</a>
-          </li>
-          <li>
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a>
-              <ToggleSwitch />
-            </a>
           </li>
         </ul>
       </header>
