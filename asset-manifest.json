@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.0ef4e4c4.css",
-    "main.js": "/static/js/main.7ad30b7d.js",
-    "static/media/comments_approval.gif": "/static/media/comments_approval.16df3ad0cd4799507dc0.gif",
-    "static/media/zoom_integration.gif": "/static/media/zoom_integration.ffe9b07a13d07c8aec20.gif",
-    "static/media/auto_nesting.gif": "/static/media/auto_nesting.1650baf55b39f13726bf.gif",
+    "main.js": "/static/js/main.f8d13397.js",
+    "static/media/comments_approval.gif": "/static/media/comments_approval.4d11c694f7f15fd1e763.gif",
+    "static/media/zoom_integration.gif": "/static/media/zoom_integration.5096b7238ca3a762e1bd.gif",
+    "static/media/auto_nesting.gif": "/static/media/auto_nesting.4eff4b9f59170c12edf3.gif",
     "static/media/bike_trilhas_app.webp": "/static/media/bike_trilhas_app.a754eda80180c7ff913c.webp",
     "static/media/udesc_logo.webp": "/static/media/udesc_logo.5ba425ebc59bc3201263.webp",
     "static/media/dev_coding.webp": "/static/media/dev_coding.b404e9953a42c2ca3d5d.webp",
@@ -28,10 +28,10 @@
     "static/media/wbezerra_logo.webp": "/static/media/wbezerra_logo.ee3c9992b2f2b33baab9.webp",
     "index.html": "/index.html",
     "main.0ef4e4c4.css.map": "/static/css/main.0ef4e4c4.css.map",
-    "main.7ad30b7d.js.map": "/static/js/main.7ad30b7d.js.map"
+    "main.f8d13397.js.map": "/static/js/main.f8d13397.js.map"
   },
   "entrypoints": [
     "static/css/main.0ef4e4c4.css",
-    "static/js/main.7ad30b7d.js"
+    "static/js/main.f8d13397.js"
   ]
 }
