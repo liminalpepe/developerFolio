@@ -10,11 +10,20 @@ import Button from "../../components/button/Button";
 import {illustration, greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
-export default function Greeting() {
+export default function Greeting({openContactModal}) {
+  console.log("freetings", openContactModal);
   const {isDark} = useContext(StyleContext);
   if (!greeting.displayGreeting) {
     return null;
   }
+
+  function workWithMeClick(e) {
+    e.preventDefault();
+
+    console.log("clicou !");
+    openContactModal();
+  }
+
   return (
     <Fade bottom duration={1000} distance="40px">
       <div className="greet-main" id="greeting">
@@ -46,7 +55,7 @@ export default function Greeting() {
               </span>
 
               <div className="button-greeting-div">
-                <Button text="Work with me" href="#contact" />
+                <Button text="Contact me" onClickCallBack={workWithMeClick} />
                 {greeting.resumeLink && (
                   <Button
                     text="See my resume"

@@ -6,25 +6,24 @@ import Skills from "./skills/Skills";
 import WorkExperience from "./workExperience/WorkExperience";
 import Projects from "./projects/Projects";
 import AcademicProjects from "./academicProjects/AcademicProjects";
-import StartupProject from "./StartupProjects/StartupProject";
-import Achievement from "./achievement/Achievement";
-import Blogs from "./blogs/Blogs";
 import Footer from "../components/footer/Footer";
 import Education from "./education/Education";
 import ScrollToTopButton from "./topbutton/Top";
-import Profile from "./profile/Profile";
 import SplashScreen from "./splashScreen/SplashScreen";
 import {splashScreen} from "../portfolio";
 import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
 import "./Main.scss";
 import {skillsSection} from "../portfolio";
+import ContactModal from "./contactModal/ContactModal";
+import Modal from "../components/modal/Modal";
 
 const Main = () => {
   const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
   const [isDark, setIsDark] = useLocalStorage("isDark", darkPref.matches);
   const [isShowingSplashAnimation, setIsShowingSplashAnimation] =
     useState(true);
+  const [toggleContactModal, setToggleContactModal] = useState(false);
 
   useEffect(() => {
     if (splashScreen.enabled) {
@@ -36,7 +35,17 @@ const Main = () => {
         clearTimeout(splashTimer);
       };
     }
-  }, []);
+
+    toggleContactModal && (document.body.style.overflow = "hidden");
+    !toggleContactModal && (document.body.style.overflow = "unset");
+
+    console.log("toggle modal", toggleContactModal);
+  }, [toggleContactModal]);
+
+  function openModal() {
+    console.log("open modal@");
+    setToggleContactModal(true);
+  }
 
   const changeTheme = () => {
     setIsDark(!isDark);
@@ -49,8 +58,15 @@ const Main = () => {
           <SplashScreen />
         ) : (
           <div className="content">
+            <Modal
+              isOpen={toggleContactModal}
+              setToggleModal={() => setToggleContactModal(!toggleContactModal)}
+              center={true}
+            >
+              <ContactModal></ContactModal>
+            </Modal>
             <Header />
-            <Greeting />
+            <Greeting openContactModal={openModal} />
             <Skills skillsSection={skillsSection} />
             <Projects />
             <WorkExperience />
@@ -60,7 +76,6 @@ const Main = () => {
             <AcademicProjects />
             {/* <Blogs /> */}
             <WorkWithMe />
-            {/* <Profile /> */}
             <Footer />
             <ScrollToTopButton />
           </div>

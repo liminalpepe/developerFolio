@@ -11,7 +11,7 @@ export default function WorkWithMe() {
   const {isDark} = useContext(StyleContext);
   return (
     <Fade bottom duration={1000} distance="40px">
-      <div className="work-with-me-main" id="work-with-me">
+      <div className="work-with-me-main" id="contact">
         <div className="work-with-me-main">
           <div className="work-with-me-text-div">
             <div>
@@ -67,7 +67,7 @@ export default function WorkWithMe() {
               <SocialMedia />
 
               <div className="button-work-with-me-div">
-                <Button text="Work with me" href="#contact" />
+                <Button text="Contact me" href="#contact" />
                 {workWithMe.resumeLink && (
                   <Button
                     text="See my resume"
