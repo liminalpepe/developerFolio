@@ -2,7 +2,6 @@ import React from "react";
 import "./Top.scss";
 
 export function TopEvent() {
-  console.log("topou");
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }

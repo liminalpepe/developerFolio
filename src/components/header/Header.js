@@ -1,7 +1,6 @@
 import React, {useContext} from "react";
 import Headroom from "react-headroom";
 import "./Header.scss";
-import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 import StyleContext from "../../contexts/StyleContext";
 import TopEvent from "../../containers/topbutton/Top";
 
@@ -10,17 +9,11 @@ import {
   workExperiences,
   skillsSection,
   openSource,
-  blogSection,
-  achievementSection
+  blogSection
 } from "../../portfolio";
 
 function Header() {
   const {isDark} = useContext(StyleContext);
-  const viewExperience = workExperiences.display;
-  const viewOpenSource = openSource.display;
-  const viewSkills = skillsSection.display;
-  const viewAchievement = achievementSection.display;
-  const viewBlog = blogSection.display;
 
   return (
     <Headroom>
