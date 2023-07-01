@@ -51,6 +51,7 @@ const workWithMe = {
 
 const socialMediaLinks = {
   github: "https://github.com/liminalpepe",
+  githubAlt: "https://github.com/wesklei",
   linkedin: "https://www.linkedin.com/in/wesklei/",
   gmail: "theliminalguy@gmail.com",
   twitter: "https://twitter.com/liminalpepe",

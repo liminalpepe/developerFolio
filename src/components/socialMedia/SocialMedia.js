@@ -20,6 +20,18 @@ export default function socialMedia() {
         </a>
       ) : null}
 
+      {socialMediaLinks.githubAlt ? (
+        <a
+          href={socialMediaLinks.githubAlt}
+          className="icon-button github"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-github"></i>
+          <span></span>
+        </a>
+      ) : null}
+
       {socialMediaLinks.linkedin ? (
         <a
           href={socialMediaLinks.linkedin}
